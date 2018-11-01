@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "tape": "^4.9.1"
+  }
+}
