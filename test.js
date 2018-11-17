@@ -10,19 +10,19 @@ test('create client and auth', async t => {
 })
 
 test('get status', async t => {
-    const status = await client.getStatus()
+    const status = await client.status()
     console.log(status)
     t.end()
 })
 
 test('get traffic stats', async t => {
-    const status = await client.getTrafficStatistics()
+    const status = await client.traffic()
     console.log(status)
     t.end()
 })
 
 test('check notifications', async t => {
-    const status = await client.getCheckNotifications()
+    const status = await client.notifications()
     console.log(status)
     t.end()
 })

@@ -31,7 +31,7 @@ class MifiClient {
         await this._request(`http://${this.host}`)
     }
 
-    async getStatus() {
+    async status() {
         const res = await this.request(`/api/monitoring/status`)
         return {
             /**
@@ -52,7 +52,7 @@ class MifiClient {
         }
     }
 
-    async getTrafficStatistics() {
+    async traffic() {
         const res = await this.request(`/api/monitoring/traffic-statistics`)
         return {
             currentConnectTime: parseInt(res.CurrentConnectTime),
@@ -66,7 +66,7 @@ class MifiClient {
         }
     }
 
-    async getCheckNotifications() {
+    async notifications() {
         const res = await this.request(`/api/monitoring/check-notifications`)
         return {
             unreadMessage: parseInt(res.UnreadMessage),
