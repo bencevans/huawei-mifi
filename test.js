@@ -26,3 +26,9 @@ test('check notifications', async t => {
     console.log(status)
     t.end()
 })
+
+test('connected devices', async t => {
+    await client.login('admin', process.env.HUAWEI_PASS)
+    // const devices = await client.connectedDevices()
+
+})
